@@ -1,0 +1,322 @@
+/* app/_Component/Contact.module.css */
+
+.contact {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: 140px 8% 100px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    to bottom right,
+    #020617,
+    #0f172a,
+    #111827
+  );
+
+  color: white;
+}
+
+/* =========================
+   BLUR EFFECTS
+========================= */
+
+.blurOne,
+.blurTwo {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  opacity: 0.18;
+
+  z-index: 0;
+}
+
+.blurOne {
+  width: 300px;
+  height: 300px;
+
+  background: #38bdf8;
+
+  top: 0;
+  left: -80px;
+}
+
+.blurTwo {
+  width: 260px;
+  height: 260px;
+
+  background: #8b5cf6;
+
+  bottom: 0;
+  right: -80px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1300px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subTitle {
+  width: fit-content;
+
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #38bdf8;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 3.5rem;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.title span {
+  background: linear-gradient(
+    to right,
+    #38bdf8,
+    #818cf8
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.72);
+
+  line-height: 1.8;
+
+  font-size: 1.05rem;
+
+  max-width: 550px;
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin-top: 10px;
+}
+
+.infoCard {
+  padding: 22px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(18px);
+
+  transition: 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(56, 189, 248, 0.3);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 0 18px rgba(56, 189, 248, 0.15);
+}
+
+.infoCard h3 {
+  margin-bottom: 10px;
+
+  color: white;
+}
+
+.infoCard a {
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  transition: 0.3s ease;
+}
+
+.infoCard a:hover {
+  color: #38bdf8;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.formCard {
+  padding: 40px;
+
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(18px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.inputGroup label {
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.95rem;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: white;
+
+  outline: none;
+
+  font-size: 1rem;
+
+  transition: 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #38bdf8;
+
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+}
+
+.inputGroup textarea {
+  resize: none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.submitBtn {
+  border: none;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #6366f1
+  );
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 8px 25px rgba(56, 189, 248, 0.3);
+}
+
+.submitBtn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(56, 189, 248, 0.4);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 120px 6% 80px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .formCard {
+    padding: 28px;
+  }
+}

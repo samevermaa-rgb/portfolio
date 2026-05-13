@@ -1,0 +1,330 @@
+/* app/_Component/Projects.module.css */
+
+.projects {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: 140px 8% 100px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    to bottom,
+    #020617,
+    #0f172a,
+    #111827
+  );
+
+  color: white;
+}
+
+/* =========================
+   BLUR EFFECTS
+========================= */
+
+.blurOne,
+.blurTwo {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  opacity: 0.18;
+
+  z-index: 0;
+}
+
+.blurOne {
+  width: 300px;
+  height: 300px;
+
+  background: #38bdf8;
+
+  top: 10%;
+  left: -100px;
+}
+
+.blurTwo {
+  width: 280px;
+  height: 280px;
+
+  background: #8b5cf6;
+
+  bottom: 0;
+  right: -80px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.heading {
+  text-align: center;
+
+  max-width: 800px;
+
+  margin: auto auto 70px;
+}
+
+.subTitle {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #38bdf8;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  margin-bottom: 22px;
+
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 3.5rem;
+
+  font-weight: 800;
+
+  margin-bottom: 22px;
+}
+
+.title span {
+  background: linear-gradient(
+    to right,
+    #38bdf8,
+    #818cf8
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.72);
+
+  line-height: 1.8;
+
+  font-size: 1.05rem;
+}
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projectGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(18px);
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(56, 189, 248, 0.35);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.imageWrapper {
+  position: relative;
+
+  width: 100%;
+  height: 240px;
+
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+
+  transition: 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  padding: 28px;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+
+  margin-bottom: 16px;
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.72);
+
+  line-height: 1.7;
+
+  margin-bottom: 22px;
+}
+
+/* =========================
+   TECH STACK
+========================= */
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 26px;
+}
+
+.techStack span {
+  padding: 8px 14px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 0.85rem;
+
+  transition: 0.3s ease;
+}
+
+.techStack span:hover {
+  background: rgba(56, 189, 248, 0.16);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttonGroup {
+  display: flex;
+  gap: 14px;
+}
+
+.liveBtn,
+.codeBtn {
+  border: none;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.liveBtn {
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #6366f1
+  );
+
+  color: white;
+}
+
+.liveBtn:hover {
+  transform: translateY(-2px);
+}
+
+.codeBtn {
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.codeBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 120px 6% 80px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .content {
+    padding: 24px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
