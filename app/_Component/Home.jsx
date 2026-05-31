@@ -26,9 +26,7 @@ export default function Home() {
           </h2>
 
           <p className={styles.description}>
-            I build modern, scalable and responsive web applications
-            using MongoDB, Express.js, React and Node.js.
-            Passionate about creating beautiful UI and powerful backend systems.
+           MERN Stack Developer | AI-powered Web Application Builder | Passionate about creating modern full-stack applications and learning new technologies.
           </p>
 
           {/* CTA Buttons */}

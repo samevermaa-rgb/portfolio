@@ -42,12 +42,12 @@ export default function Footer() {
         <div className={styles.contactSection}>
           <h3>Contact</h3>
 
-          <p>Email: sameer@example.com</p>
+          <p>Email: varmasameer1980@gmai.com</p>
           <p>Location: India</p>
 
           <div className={styles.socials}>
             <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/sameer-verma-484311402/">LinkedIn</a>
             <a href="#">Twitter</a>
           </div>
         </div>

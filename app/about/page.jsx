@@ -27,9 +27,7 @@ export default function About() {
           </h1>
 
           <p className={styles.description}>
-            I'm Sameer, a MERN Stack Developer focused on building
-            responsive, scalable and user-friendly web applications
-            with clean UI and powerful backend architecture.
+            MERN Stack Developer | AI-powered Web Application Builder | Passionate about creating modern full-stack applications and learning new technologies.
           </p>
         </div>
 
@@ -40,16 +38,11 @@ export default function About() {
             <h2>Who I Am</h2>
 
             <p>
-              I am a Full Stack Web Developer who enjoys turning ideas
-              into real-world web applications. I love creating modern,
-              fast and interactive websites that provide excellent user
-              experiences across all devices.
+              I am a MERN Stack Developer who enjoys turning ideas into real-world web applications. I use AI tools and modern development technologies to build websites faster and improve productivity while maintaining quality and functionality.
             </p>
 
             <p>
-              My main focus is writing clean code, improving performance
-              and continuously learning new technologies in modern web
-              development.
+             My main focus is creating modern, responsive, and user-friendly web applications with clean code and optimized performance. By combining AI-assisted workflows with full-stack development, I can speed up development processes, improve efficiency, and focus more on building practical and effective solutions. As a fresher, I continuously learn new technologies and work on projects that strengthen my skills in modern web development.
             </p>
           </div>
 
@@ -62,11 +55,11 @@ export default function About() {
               <span>CSS3</span>
               <span>JavaScript</span>
               <span>React.js</span>
-              <span>Next.js</span>
+              
               <span>Node.js</span>
               <span>Express.js</span>
               <span>MongoDB</span>
-              <span>Tailwind CSS</span>
+            
               <span>Git & GitHub</span>
             </div>
           </div>
